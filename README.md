@@ -1,7 +1,6 @@
 # 🚀 SFMC Resources
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
+![Salesforce Badge](https://img.shields.io/badge/Salesforce-blue?logo=salesforce)
 [![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-ff69b4.svg)]()
 
 > Comprehensive collection of resources and components for Salesforce Marketing Cloud: CloudPages, AMPscript, SSJS, Automations, APIs, and more. Optimized for productivity, reusability, and scalability.

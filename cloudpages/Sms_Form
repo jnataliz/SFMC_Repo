@@ -1,0 +1,178 @@
+<form accept-charset="UTF-8" method="post" action="https://eo.business.samsung.com/l/1061372/2025-04-18/y3sdgg" class="form" id="pardot-form" novalidate="novalidate">
+
+<style type="text/css">
+form.form p label { color: #000000; }
+</style>
+
+
+
+
+
+	
+		
+
+		
+			<p class="form-field  first_name pd-text required    " aria-required="true">
+				
+					<label class="field-label" for="1061372_397045pi_1061372_397045">First Name</label>
+				
+
+				<input type="text" name="1061372_397045pi_1061372_397045" id="1061372_397045pi_1061372_397045" value="" class="text" size="30" maxlength="40" onchange="" onfocus="">
+				
+			</p>
+			<div id="error_for_1061372_397045pi_1061372_397045" style="display:none"></div>
+			
+		
+			<p class="form-field  last_name pd-text required    " aria-required="true">
+				
+					<label class="field-label" for="1061372_397048pi_1061372_397048">Last Name</label>
+				
+
+				<input type="text" name="1061372_397048pi_1061372_397048" id="1061372_397048pi_1061372_397048" value="" class="text" size="30" maxlength="80" onchange="" onfocus="">
+				
+			</p>
+			<div id="error_for_1061372_397048pi_1061372_397048" style="display:none"></div>
+			
+		
+			<p class="form-field  email pd-text required    " aria-required="true">
+				
+					<label class="field-label" for="1061372_397051pi_1061372_397051">Email</label>
+				
+
+				<input type="text" name="1061372_397051pi_1061372_397051" id="1061372_397051pi_1061372_397051" value="" class="text" size="30" maxlength="255" onchange="" onfocus="">
+				
+			</p>
+			<div id="error_for_1061372_397051pi_1061372_397051" style="display:none"></div>
+			
+		
+			<p class="form-field  industry pd-select required    " aria-required="true">
+				
+					<label class="field-label" for="1061372_397054pi_1061372_397054">In quale settore opera la tua azienda?</label>
+				
+
+				<select name="1061372_397054pi_1061372_397054" id="1061372_397054pi_1061372_397054" class="select" onchange=""><option value="" selected="selected"></option>
+<option value="5445724">General Government Support</option>
+<option value="5445727">Defense</option>
+<option value="5445730">Social Security Service</option>
+<option value="5445733">Government owned company</option>
+<option value="5445736">Education (K-12)</option>
+<option value="5445739">Higher Education</option>
+<option value="5445742">Corporate Institutions</option>
+<option value="5445745">Hotel</option>
+<option value="5445748">Travel &amp; Leisure</option>
+<option value="5445751">Entertainment</option>
+<option value="5445754">Developer &amp; Designer/Consultant</option>
+<option value="5445757">Construction company</option>
+<option value="5445760">Real Estate</option>
+<option value="5445763">Health Care Equipment &amp; Services</option>
+<option value="5445766">Pharmaceuticals &amp; Biotechnology</option>
+<option value="5445769">Healthcare Insurance</option>
+<option value="5445772">Banking</option>
+<option value="5445775">Financial Services</option>
+<option value="5445778">Life &amp; Property Insurance</option>
+<option value="5445781">Leasing</option>
+<option value="5445784">General Retailer</option>
+<option value="5445787">Food &amp; Restaurant</option>
+<option value="5445790">Specialty Retailer</option>
+<option value="5445793">Door to Door sales</option>
+<option value="5445796">Food &amp; Household</option>
+<option value="5445799">Wholesaler</option>
+<option value="5445802">Air Transport</option>
+<option value="5445805">Land &amp; Marine Transport</option>
+<option value="5445808">Logistics</option>
+<option value="5445811">IT, SI, Consulting</option>
+<option value="5445814">Others(Professional Services)</option>
+<option value="5445817">Telecommunication Service</option>
+<option value="5445820">Broadcasting, Media</option>
+<option value="5445823">Electricity</option>
+<option value="5445826">Gas</option>
+<option value="5445829">Water &amp; sewage</option>
+<option value="5445832">Agriculture, Forestry and Fishing</option>
+<option value="5445835">Religion</option>
+<option value="5445838">Others</option>
+<option value="5445841">Automotive</option>
+</select>
+				
+			</p>
+			<div id="error_for_1061372_397054pi_1061372_397054" style="display:none"></div>
+			
+		
+			<p class="form-field  No_of_Employees_Standardised pd-select required    " aria-required="true">
+				
+					<label class="field-label" for="1061372_397057pi_1061372_397057">Quanti dipendenti ha?</label>
+				
+
+				<select name="1061372_397057pi_1061372_397057" id="1061372_397057pi_1061372_397057" class="select" onchange=""><option value="" selected="selected"></option>
+<option value="5445844">&lt;50</option>
+<option value="5445847">50-99</option>
+<option value="5445850">100-199</option>
+<option value="5445853">200-499</option>
+<option value="5445856">500-999</option>
+<option value="5445859">&gt;1000</option>
+</select>
+				
+			</p>
+			<div id="error_for_1061372_397057pi_1061372_397057" style="display:none"></div>
+			
+		
+			<p class="form-field  Product_Solution_of_Interest pd-select required    " aria-required="true">
+				
+					<label class="field-label" for="1061372_397060pi_1061372_397060">P_Product/Solution of Interest</label>
+				
+
+				<select name="1061372_397060pi_1061372_397060[]" id="1061372_397060pi_1061372_397060" size="5" multiple="multiple" onchange=""><option value="5445862">Enterprise Edition</option>
+<option value="5445865">Knox Solution</option>
+<option value="5445868">Rugged</option>
+<option value="5445871">Smartphones</option>
+<option value="5445874">Tablet / Note PC</option>
+<option value="5445877">Wearables / Accessories</option>
+<option value="5445880">LED Signage</option>
+<option value="5445883">Monitor</option>
+<option value="5445886">Commercial TV</option>
+<option value="5445889">Smart Signage</option>
+<option value="5445892">Signage Solution</option>
+<option value="5445895">Air Conditioner</option>
+<option value="5445898">Climate</option>
+<option value="5445901">Heat Pumps</option>
+<option value="5445904">Digital Appliance</option>
+<option value="5445907">Storage</option>
+<option value="5445910">Healthcare</option>
+<option value="5445913" selected="selected"></option>
+</select>
+				
+			</p>
+			<div id="error_for_1061372_397060pi_1061372_397060" style="display:none"></div>
+			
+		
+
+		
+	<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+		<label for="pi_extra_field">Comments</label>
+		<input type="text" name="pi_extra_field" id="pi_extra_field">
+	</p>
+		
+
+		<!-- forces IE5-8 to correctly submit UTF8 content  -->
+		<input name="_utf8" type="hidden" value="☃">
+
+		<p class="submit">
+			<input type="submit" accesskey="s" value="" class="formSubmit">
+		</p>
+	
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}
+		
+//]]>
+</script>
+<input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value=""></form>

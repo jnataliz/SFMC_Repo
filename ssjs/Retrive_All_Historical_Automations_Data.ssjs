@@ -3,39 +3,63 @@
 Platform.Load("Core", "1");
 
 var api = new Script.Util.WSProxy();
-var deCustomerKey = "527af26e-27e2-49bb-bde4-e0dbed33d228"; // il tuo DE External Key
+var deKey = "527af26e-27e2-49bb-bde4-e0dbed33d228"; // External Key della DE
 
 try {
     var automations = retrieveAllAutomations();
+    var todayDate = "2025-04-18T00:00:00"; // fallback data fissa
 
-    for (var i = 0; i < automations.length; i++) {
-        var automation = automations[i];
+    if (automations.length > 0) {
+        for (var i = 0; i < automations.length; i++) {
+            var automation = automations[i];
 
-        var props = [
-            { Name: "AutomationCustomerKey", Value: automation.CustomerKey },
-            { Name: "AutomationName", Value: automation.Name },
-            { Name: "CreatedDate", Value: automation.CreatedDate },
-            { Name: "FolderPath", Value: automation.CategoryID },
-            { Name: "LastRunTime", Value: automation.LastRunTime },
-            { Name: "ScheduledTime", Value: automation.ScheduledTime },
-            { Name: "EID", Value: "510003463" },
-            { Name: "MID", Value: "510003463" },
-            { Name: "BusinessUnitName", Value: "Sanofi Aventis Group" }
-        ];
+            // Preparazione LastRunTime
+            var lastRunTimeValue = "1900-01-01T00:00:00Z"; // fallback neutro
+            if (automation.LastRunTime && String(automation.LastRunTime).indexOf("0001") == -1) {
+                lastRunTimeValue = automation.LastRunTime;
+            }
 
-        var result = api.updateItem('DataExtensionObject', {
-            CustomerKey: deCustomerKey,
-            Properties: props
-        });
+            // Costruzione Properties
+            var propertiesArray = [
+                { Name: "AutomationCustomerKey", Value: automation.CustomerKey },
+                { Name: "AutomationName", Value: automation.Name },
+                { Name: "CreatedDate", Value: automation.CreatedDate },
+                { Name: "FolderPath", Value: automation.CategoryID },
+                { Name: "LastRunTime", Value: lastRunTimeValue },
+                { Name: "EID", Value: "510003463" },
+                { Name: "MID", Value: "510003463" },
+                { Name: "BusinessUnitName", Value: "Sanofi Aventis Group" },
+                { Name: "StartSource", Value: automation.AutomationType },
+                { Name: "ScheduledFrequency", Value: automation.Schedule },
+            ];
 
-        // Se vuoi vedere il risultato
-        Write("Automation " + automation.Name + ": " + Stringify(result) + "<br>");
+            var props = {
+                CustomerKey: deKey,
+                Properties: propertiesArray
+            };
+
+            // Proviamo a scrivere e gestiamo eventuali errori individuali
+            try {
+                var result = api.createItem('DataExtensionObject', props);
+
+                if (result.Status == "OK") {
+                    Write("Inserito automation " + automation.CustomerKey + "<br>");
+                } else {
+                    Write("Errore inserimento per automation " + automation.CustomerKey + ": " + Stringify(result) + "<br>");
+                }
+            } catch(innerErr) {
+                Write("Errore critico su automation " + automation.CustomerKey + ": " + Stringify(innerErr) + "<br>");
+            }
+        }
+    } else {
+        Write("Nessuna automation trovata.");
     }
 
 } catch(err) {
-    Write("Errore: " + Stringify(err));
+    Write("Errore globale: " + Stringify(err));
 }
 
+// Recupero Automations
 function retrieveAllAutomations() {
     var out = [],
         moreData = true,
@@ -47,7 +71,9 @@ function retrieveAllAutomations() {
         "CreatedDate",
         "CategoryID",
         "LastRunTime",
-        "ScheduledTime"
+        "ScheduledTime",
+        "AutomationType",
+        "Schedule"
     ];
 
     var filter = {

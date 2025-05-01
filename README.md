@@ -11,6 +11,7 @@
 
 ```bash
 sfmc-resources/
+├── SFMC_Admin_Cert/   # SFMC Administrator Exam notes  
 ├── cloudpages/        # Landing Pages, Form, Micrositi
 ├── ampscript/         # Funzioni, snippet, esempi AMPscript
 ├── ssjs/              # Script Server-Side JavaScript
